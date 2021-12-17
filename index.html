@@ -72,17 +72,27 @@ body {
   border-radius: 50%;
 }
 
-.circle {
-  width: 500px;
-  height: 500px;
-  line-height: 500px;
-  border:1px solid red;
-  -moz-border-radius:50%;
-  -webkit-border-radius:50%;
-  font-size: 50px;
-  color: #;
-  text-align: center;
-  background: #
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: transparent;
+   color: black;
+   text-align: center;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
   .accordion {
@@ -287,7 +297,7 @@ var x = setInterval(function() {
   <br>
   <br>
   <br>
-<div>
+
   <img src="favicon.png"
        width="25px";
        height="25px">
